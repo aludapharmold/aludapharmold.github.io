@@ -1,0 +1,495 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Team - Aluda Pharmaceuticals, Inc.</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#logo img {
+  height: 90px;
+}
+a, a:visited, a:active {
+	color: #1a4396;
+}
+.wrapper {
+	margin: auto;
+	min-width: 1045px;
+	max-width: 1125px;
+}
+#header {
+	padding: 26px 9px 26px 9px;
+}
+#footer {
+	background: #1a4396;
+/*	width: max-content;*/
+	color: #bbc7e0;
+	font-size: 18px;
+}
+#footer .inner {
+  padding: 26px 9px 26px 9px;
+}
+#footer a {
+	color: inherit;
+}
+#navigation {
+	float: right;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+}
+#navigation * {
+  margin: 0;
+}
+.navigation-item {
+  position: relative;
+  display: inline-block;
+	font-size: 27px;
+	font-weight: 600;
+	color: #1a4396;
+	margin: 0 3px 0 3px;
+}
+.navigation-item a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation-item a.item {
+	padding: 9px 14px 9px 14px;
+	border-radius: 4px;
+}
+.navigation-item .navigation-wrapper:hover a.item, .navigation-item a.item:hover, .navigation-item a.item:active,
+.navigation-item .navigation-wrapper .navigation-dropdown a:hover,
+.navigation-item .navigation-wrapper .navigation-dropdown a:active{
+	background: #1a4396;
+	color: white;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+.navigation-item .navigation-wrapper:hover .navigation-dropdown {
+  display: block;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.navigation-item .navigation-wrapper .navigation-dropdown {
+  display: none;
+  background: white;
+  border: 2px solid #1a4396;
+  line-height: 44px;
+  padding: 8px 0px 8px 0px;
+  position: absolute;
+  top: 68px;
+  left: 0px;
+  min-width: 225px;
+}
+.navigation-item .navigation-wrapper .navigation-dropdown a {
+  display: block;
+  background: transparent;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 4px 14px 4px 14px;
+  color: #1a4396;
+  white-space: nowrap;
+}
+/*.navigation-item .navigation-wrapper .navigation-dropdown a::before {
+  content: "-\a0\a0\a0 ";
+}*/
+#location-bar {
+	clear: both;
+	background: #1a4396;
+	/*width: max-content;*/
+	color: white;
+	font-size: 20px;
+}
+#location-bar .wrapper > .inner {
+	padding: 8px 9px 9px 9px;
+}
+#location-bar a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+}
+#location-bar a:hover {
+	text-decoration: underline;
+}
+h1 {
+	color: #1a4396;
+	font-weight: bold;
+	font-size: 30px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-left: -2px;
+    line-height: 1.2em;
+}
+h2 {
+	font-weight: bold;
+	font-size: 26px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+}
+#content {
+	margin-right: 300px;
+	padding-left: 9px;
+	padding-right: 18px;
+	padding-bottom: 1px;
+	margin-bottom: 18px;
+	border-right: 2px solid #1a4396;
+	min-height: 600px;
+}
+#content img, #content svg {
+	max-width: 100%;
+  height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content, #content p {
+	font-size: 19px;
+	line-height: 1.4em;
+}
+#content .pageurl {
+  display: none;
+}
+/*.hide-navigation #content-sidebar {
+  display: none;
+}
+.hide-navigation #content {
+  border-right: none;
+}*/
+.hide-navigation #content-sidebar .section {
+  display: none;
+}
+.hide-navigation #content-sidebar {
+  margin-top: -10px;
+}
+#content-sidebar {
+	width: 270px;
+	min-height: 400px;
+	float: right;
+	color: #1a4396;
+	line-height: 1.8em;
+  margin-right: 9px;
+}
+#content-sidebar a {
+	color: inherit;
+	text-decoration: none;
+}
+#content-sidebar a:hover {
+	text-decoration: underline;
+}
+#content-sidebar .section {
+	font-size: 26px;
+	font-weight: bold;
+}
+#content-sidebar .subsection {
+	font-size: 22px;
+	padding-left: 25px ;
+	text-indent: -25px ;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+#content-sidebar .subsection.selected {
+  font-weight: 600;
+}
+#content-sidebar .subsection .arrow {
+}
+
+/*@media only screen and (max-width: 1000px) {
+  #logo {
+    display: block;
+  }
+  #navigation {
+    float: none;
+    text-align: center;
+  }
+  .navigation-item {
+    font-size: 20px !important;
+  }
+}*/
+@media only screen and (max-width: 1200px) {
+  #logo img {
+    height: 75px;
+  }
+  #navigation {
+    height: 75px;
+    line-height: 75px;
+  }
+  .navigation-item {
+    font-size: 24px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown {
+    line-height: 48px;
+    top: 58px;
+    min-width: 250px;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown a {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 4px 16px 4px 16px;
+  }
+  .wrapper {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1250px;
+  }
+  #content, #location-bar .wrapper > .inner, #header, #footer .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #content-sidebar {
+    line-height: 1.8em;
+    margin-right: 24px;
+    width: 255px;
+  }
+  #content-sidebar .section {
+    font-size: 22px;
+  }
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {/*was 768*/
+  body {
+  }
+  #logo img {
+  	height: 75px;
+  }
+  .wrapper {
+  	min-width: 0;
+  	max-width: none;
+  }
+  #header {
+  	padding: 0;
+  }
+  #footer {
+    font-size: 18px;
+  }
+  #footer .inner {
+    padding: 20px 10px 20px 10px;
+  }
+  #logo {
+  	display: block;
+  	padding: 20px;
+  }
+  #navigation {
+  	float: none;
+  	height: auto;
+  	line-height: inherit;
+    margin-bottom: 10px;
+  }
+  #navigation .navigation-item {
+  	/*padding: 4px 0 4px 0;*/
+  	font-size: 20px;
+    text-align: center;
+  }
+  .hide-navigation #content-sidebar {
+    margin-top: 0;
+  }
+  .navigation-item .navigation-wrapper .navigation-dropdown,
+  .navigation-item .navigation-wrapper:hover .navigation-dropdown {
+    display: none !important;
+  }
+  #navigation .navigation-item a.item {
+  border-top: 1px solid #1a4396;
+    display: block;
+    border-radius: 0;
+    padding: 10px;
+  }
+  #navigation .navigation-item {
+    display: block;
+  }
+  #navigation .navigation-item:last-child a.item {
+    border-bottom: 1px solid #1a4396;
+  }
+  #location-bar {
+    font-size: 20px;
+  }
+  #content-sidebar {
+    width: auto;
+  	float: none;
+  	line-height: 1.8em;
+  	min-height: 0px;
+  	padding: 10px 10px 10px 10px;
+  	border-bottom: 1px solid #1a4396;
+    margin-right: 0;
+  }
+  #content-sidebar .section {
+  	display: none;
+  }
+  #content-sidebar .subsection {
+  	font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+  }
+  #content, #content p {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+}
+@media print {
+  #navigation {
+    display: none;
+  }
+
+  #location-bar, #footer {
+    background: white;
+    color: black;
+  }
+  #location-bar {
+    display: none;
+  }
+  #header {
+    padding: 10px;
+  }
+
+  #footer .inner {
+    padding: 10px;
+  }
+
+  #content {
+    margin: 0 0 0 0;
+    border: none;
+    min-height: 0;
+    border-bottom: 2px solid black;
+  }
+
+  #content a, #content a:visited {
+    color: black;
+  }
+
+  #content img, #content svg {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  #content .pageurl {
+    display: block;
+    font-style: italic;
+  }
+
+  #content-sidebar {
+    color: black;
+    width: auto;
+    float: none;
+    line-height: 1.5em;
+    min-height: 0px;
+    padding: 10px 10px 10px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  #content-sidebar .section {
+    font-size: 24px;
+  }
+
+  #content-sidebar .subsection {
+    font-size: 20px;
+  }
+
+  h1 {
+    color: black;
+  }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div id="header">
+		<span id="logo">
+			<a href = "/"><img src="/logo.svg" alt="Aluda Pharmaceuticals, Inc." /></a>
+		</span>
+		<div id="navigation">
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/">Company</a>
+          <div class = "navigation-dropdown">
+            <a href = "/">Overview</a>
+            <a href = "/company/team.html">Team</a>
+          </div>
+        </span>
+      </span>
+			<span class="navigation-item">
+        <span class = "navigation-wrapper">
+          <a class="item" href="/pipeline">Pipeline</a>
+          <div class = "navigation-dropdown">
+            <a href = "/pipeline">Overview</a>
+            <a href = "/pipeline/covid.html">-&nbsp;&nbsp; COVID-19 Antiviral</a>
+            <a href = "/pipeline/fibrosis.html">-&nbsp;&nbsp; Fibrosis</a>
+            <a href = "/pipeline/exori.html">-&nbsp;&nbsp; Exosome Release Inhibitors (ExoRI)</a>
+            <a href = "/pipeline/autoimmunity-balancers.html">-&nbsp;&nbsp; Autoimmunity Th17/Treg Balancers</a>
+            <a href = "/pipeline/methuotics.html">-&nbsp;&nbsp; Methuotics</a>
+            <a href = "/pipeline/io-stat3-potentiators.html">-&nbsp;&nbsp; I-O STAT3 Potentiators</a>
+          </div>
+        </span>
+      </span>
+			<span class="navigation-item"><a class="item" href="/partnering">Partnering</a></span>
+			<span class="navigation-item"><a class="item" href="/careers">Careers</a></span>
+			<span class="navigation-item"><a class="item" href="/contact">Contact</a></span>
+		</div>
+	</div>
+</div>
+<div id="location-bar">
+	<div class="wrapper">
+		<div class = "inner">
+			<a href = "/company">Company</a> &nbsp;&rsaquo;&nbsp; <a href = "/company/team.html">Team</a>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="content-sidebar">
+		<div class = "section">Company</div><div class = "subsection"><span class = "arrow">-&nbsp;&nbsp;&nbsp; </span><a href = "/index.html">Overview</a></div><div class = "subsection selected"><span class = "arrow"><b>&rsaquo;&nbsp;&nbsp;&nbsp;</b> </span><a href = "/company/team.html">Team</a></div>
+	</div>
+	<div id="content">
+<h1>Team</h1>
+<h2>Ruihuan Chen, Ph.D., Founder and CEO</h2>
+<p>Dr. Chen is a passionate scientist-turned entrepreneur and brings extensive drug discovery experience within multiple blockbuster category drugs.  His multidisciplinary training in pharmacology, biochemistry, molecular biology and molecular medicine provides exceptional vision for Aluda.</p>
+<p>During his early career in academia in Beijing, Paris and New York, Dr. Chen worked on novel small molecule anti-cancer drugs and the mammary production of therapeutic proteins. He co-founded Natrogen (acq&rsquo;d by Takeda) and managed their autoimmune program from discovery to Phase II including a successful Ph 2.  At Genentech, Dr. Chen focused on the discovery of therapeutic targets for cancer, and was a key contributor to the understanding of molecular signature of glioblastomas and signaling pathways involved in tumor growth. He designed and executed experiments to analyze the lineage hierarchy of cancer stem cells and to determine the roles of tumor microenvironment and metabolism in tumorogenesis. He produced several high-impact peer-reviewed publications.</p>
+<p>Dr. Chen received his B.Sc. N pharmacology from  Fudan University,  a M.Sc. in biochemistry from Beijing Normal University, and his Ph.D. in Molecular Biology and Genetics from University of Paris.  He completed post-doctoral work at Mt. Sinai School of Medicine.</p>
+
+<h2>Lian Mo, M.D., Founder and Chief Medical Officer</h2>
+<p>	Dr. Mo worked as a physician in one of the leading hospitals in China, where she was frustrated by the lack of effective treatments available for so many of the severe diseases she was treating. This frustration led to a transition from clinical practice to scientific and translational research, where she spent 6 years in postdoctoral roles studying clinical immunology and eventually joined the pharmaceutical industry.  Her research produced several peer-reviewed publications in immunology and oncology and subsequently a drug candidate that completed a successful  Phase II in Inflammatory Bowel Disease. She co-founded Aluda with a dedication to using leading-edge biology and a company structure designed for rapid decision-making to discover transformative therapeutics for people living with severe diseases. In her role as CMO for Aluda, she brings knowledge and experience in drug development through proof of concept in the clinic, as well as a sense of urgency as a treating physician.
+</p>
+
+<h2>Deebie Symmes, BS, MBA, Founder and COO</h2>
+<p>Ms. Symmes brings extensive experience and strategy to corporate development and partnering, having originated, negotiated, and closed over 50 licensing transactions in all stages from discovery through Phase 2.   She held senior full time roles at Ciba Corning Diagnostics, Chiron, Tularik and ARYx where she closed a segment-leading, IPO-enabling deal of worth $575 million.  Ms. Symmes has been a strategy and market analysis consultant at Keelin Reeds, and held corporate development roles at multiple start ups with advanced biology platforms, providing analysis and guidance for effective negotiations and positive alliance management.  She believes partnering work is best done with strong collaborative internal teams and strives to bring out every element of context, science, and know-how that can enhance the partnering value of a program.  She enjoys gaining fluency in each technical area she works in and has exceptionally broad therapeutic area deal experience spanning CNS, GI, cardiovascular, inflammation, and oncology.  Earlier in her career, she managed a global corporate planning process for a multi-national company.</p>
+<p>Ms. Symmes holds an M.B.A. from The Wharton School and a  biology degree from Smith College, and completed the 2 year program on Drug Development and Regulatory Science from UCSF School of pharmacy ACDRS program taught by Carl Peck.</p>
+<p class = "pageurl">This document was printed from <a href="http://www.aludapharm.com/company/team.html">http://www.aludapharm.com/company/team.html</a></p>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class = "inner">
+			<b>Aluda Pharmaceuticals, Inc.</b><br/>
+			Tel: +1 (650) 285-1628</a><br/>
+			Email: <a href="mailto:info@aludapharm.com">info@aludapharm.com</a><br/><br/>
+			&copy; Aluda Pharmaceuticals, Inc.  All rights reserved.
+		</div>
+	</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136955566-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136955566-1');
+</script>
+</body>
+</html>
